@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Hind+Vadodara:wght@300&family=Satisfy&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.pag1{
+	background-image: url(img/Fondo.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	align-items: stretch;
+}
+.menu{
+	background-color: #313131;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.menu .barra{
+	color: white;	
+	flex: 20%;
+	align-items: center;
+	padding: 20px;
+	font-family: ubuntu;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#ba1, #ba3{
+	font-size: 25px;
+}
+#ba2{
+	text-align: center;
+}
+#ba3{
+	text-align: right;
+}
+.princi{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+	margin-top: 60px;
+
+}
+#maseta{
+	width: 400px;
+	flex: 20%;
+
+}
+.boton_menu{
+	color: white;
+	background-color: #489f10;
+	border:none;
+	padding: 10px 25px;
+	margin-top: 20px;
+}
+.boton_menu:hover{
+	background-color: #caefb2;
+	color: black;
+}
+.barra_inferior{
+	background-color: #0b3d19;
+	color: white;
+	align-items: flex-end;
+	height: 150px;
+	display: flex;
+	flex-wrap: wrap;;
+	align-items: center;
+}
+.barrita_in{
+	display: flex;
+	flex-wrap: wrap;
+	flex: 20%;
+	justify-content: center;
+	font-family: 'Barlow', sans-serif;
+	
+}
+.titulo_prin{
+	font-family: 'Barlow', sans-serif;
+	font-size: 5em;
+
+}
+#des{
+	font-family: 'Satisfy', cursive;
+	color: #faab34;
+	font-size: 2em;
+}
+#des2{
+	font-family: 'Barlow', sans-serif;
+}
+.numero_pi{
+	font-size: 3em;
+	color: #8ec135;
+}
+.pag2_images{
+	display: flex;
+	flex-wrap: wrap; 
+	align-items: center;
+}
+.image, .image2, .image3{
+	text-align: center;
+	color: white;
+	flex: 20%;
+	margin: 30px;
+}
+.image{
+	-webkit-background-size: cover;
+	background-image: url(img/img1.jpg);
+	background-size: cover; 
+	padding-top: 40px;
+}
+.image2{
+	background-image: url(img/img2.jpeg);
+	-webkit-background-size: cover;
+	background-size: cover; 
+}
+.image3{
+	background-image: url(img/img3.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.p_image{
+	border: 1px solid white;
+	font-size: 3em;
+	font-family: 'Satisfy', cursive;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 200px;
+	margin: 30px;
+}
+.pag3{
+	background-image: url(img/Fondo_pag3.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	flex: 20%;
+}
+.pag3 .text_pag3, .image_pag3{
+	margin-top: 80px;
+	margin-bottom: 80px; 
+}
+.pag3 .text_pag3, .autor_pag3, .title_pag3, .descrip_pag3, .boton_pag3{
+	padding: 10px;
+	margin-left: 80px;
+}
+.pag3 .autor_pag3{
+	font-family: 'Satisfy', cursive;
+	color: #faab34;
+	font-size: 2em;
+}
+.pag3 .title_pag3{
+	font-family: 'Barlow', sans-serif;
+	font-size: 3em;
+}
+.pag3 .descrip_pag3{
+	font-family: 'Barlow', sans-serif;
+	color: black;
+}
+.pag3 .boton_pag3{
+	color: white;
+	background-color: #489f10;
+	border:none;
+	padding: 10px 25px;
+	margin-top: 20px;
+}
+.pag3 .img_pag3{
+	clip-path: circle(50% at 50% 50%);
+	margin-right: 100px;
+}
+.pag4{
+	background-image: url(img/Fondo_pag4.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: rgba(0,0,0,0.8);
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+}
+.pag4 .general_pag4{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.pag4 .lista_pag4{
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+	align-items: center;
+}
+.pag4 .texto_pag4{
+	font-size: 1.5em;
+}
+.pag4 .texto_pag4 .text_init_pag4{
+	font-family: 'Satisfy', cursive;
+	color: #faab34;
+	font-size: 2em;
+}
+.pag4 .lista_pag4 .li1_pag4, .li2_pag4, .li3_pag4, .li4_pag4{
+	flex: 20%;
+}
+.pag4 .lista_pag4 .li2_pag4, .li4_pag4{
+	padding-top: 100px;
+}
+.pag4 .lista_pag4 b{
+	font-size: 1.5em;
+}
+.pag4 .lista_pag4 .andmore_pag4{
+	padding-top: 15px;
+	font-size: 1.2em;
+	color: #75ac4c;
+}
+.pag5 .galeri_pag5{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px;
+	justify-content: center;
+}
+.pag5 .galeri_pag5 .img{
+	margin: 15px;
+}
+.pag6{
+	background-image: url(img/Fondo_pag6.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.pag6 .contenido_pag6{
+	background-color: #fff;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+	margin-left: 500px;
+	margin-right: 500px;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+}
+.pag6 .contenido_pag6 .texto_pag6 .testi_pag4{
+	font-family: 'Satisfy', cursive;
+	color: #faab34;
+	font-size: 2em;
+}
+.pag6 .contenido_pag6 .texto_pag6{
+	font-family: 'Barlow', sans-serif;
+	color: black;
+}
+.pag6 .contenido_pag6 .title_pag6{
+	font-size: 1.8em;
+}
+.pag6 .boton1_pag6{
+	font-size: 50px;
+}
+.footer{
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgba(44,83,100,0.6), rgba(32,58,67,0.6), rgba(15,32,39,0.6)), url(img/FondoFooter.jpg) no-repeat center center fixed;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgba(44,83,100,0.6), rgba(32,58,67,0.6), rgba(15,32,39,0.6)), url(img/FondoFooter.jpg) no-repeat center center fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+}
+.footer .lista_footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.footer .lista_footer .contacto{
+	padding: 30px;
+	margin-bottom: 90px;
+	margin-top: 90px;
+}
+.footer .logo figure{
+	margin-top: 30px;
+	padding: 50px;
+}
