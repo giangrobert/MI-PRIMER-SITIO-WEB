@@ -1,3 +1,8 @@
+window.onload = function(){
+    alert('he cargado todo');
+    $("#aparecer").fadeOut();
+    $('body').removeClass('hidden');
+}
 function startTime() {
     var today = new Date();
     var hr = today.getHours();
