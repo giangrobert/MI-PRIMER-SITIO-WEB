@@ -34,3 +34,7 @@ function checkTime(i) {
     }
     return i;
 }
+$(document).bind("contextmenu",function(e){
+        return false;
+    });
+    
