@@ -257,6 +257,51 @@ a{
 .pag6 .boton1_pag6{
 	font-size: 50px;
 }
+
+.registro{
+	background-image: url(img/Fondo_pag3.jpg);
+	background-size: cover;	
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	font-family:'Barlow', sans-serif;
+}
+.registro input{
+	font-size: 20px;
+	font-family:'Barlow', sans-serif; 
+	background-color: rgba(255,255,255,0);
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,0.6);
+	margin: 10px;
+	padding: 5px;
+}
+.registro legend{
+	font-size: 1.4em;
+	color: #faab34;
+}
+.registro form{
+	margin-left: 100px;
+}
+.registro .form_re, .comentario{
+	margin: 50px;
+
+}
+.registro .boton_registro{
+	border: none;
+	background-color: #489f10;
+	padding: 10px 30px;
+	margin-left: 200px;
+	margin-top: 10px;
+	color: white;
+}
+.registro .boton_registro:hover{
+	background-color: #fff;
+	color: black;
+}
+
 .footer{
 	background: #0F2027;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, rgba(44,83,100,0.6), rgba(32,58,67,0.6), rgba(15,32,39,0.6)), url(img/FondoFooter.jpg) no-repeat center center fixed;  /* Chrome 10-25, Safari 5.1-6 */

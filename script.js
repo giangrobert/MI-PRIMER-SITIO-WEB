@@ -1,5 +1,4 @@
 window.onload = function(){
-    alert('he cargado todo');
     $("#aparecer").fadeOut();
     $('body').removeClass('hidden');
 }
@@ -37,4 +36,27 @@ function checkTime(i) {
 $(document).bind("contextmenu",function(e){
         return false;
     });
-    
+
+function verifiacadordeEdad(){
+    var edad, nombre, apellidos, correo;
+    nombre = document.getElementById("nombre").value;
+    correo = document.getElementById("correo").value;
+    fecha_na = document.getElementById("fecha_na").value;
+    edad = document.getElementById("edad").value;
+
+    expresion = /\w+@\w+\.+[a-z]/;
+
+    apellidos = document.getElementById("apellidos").value;
+   if (nombre === "" || apellidos === "" || correo === "" || fecha_na === "" || edad === "") {
+        alert("Todos los campos son obligatorios");
+        return false;
+   }else if(edad <= 0 || edad > 120){
+        alert("La edad no existe");
+        return false;
+   }else if (!expresion.test(correo)){
+        alert("El correo no es valido");
+        return false;
+   }else{
+    alert("los datos se guardaron correctamente");
+   }
+}
