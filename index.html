@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	<script src="script.js"></script>
 	<title>Mi página web</title>
 </head>
-<body>
+<body onload="startTime()">
 	<div class="pag1">
 		<div class="menu">
 			<a href="#" class="barra" id="ba1"><span class="icon-menu"></span></a>
@@ -74,7 +75,7 @@
 				<h1 class="title_pag4">What Can We Offer</h1><br>
 				<p class="des_pag4">Gardenies' mission is to provide opur customers with responsive service <br> and unsurpassed quality at an affordable price.</p>
 			</div>
-			<div class="lista_pag4">
+			<div class="lista_pag4"> 
 				<div class="li1_pag4">
 					<figure><img src="img/img_li1.png"  width="200px"></figure>
 					<p><b>Garden Design</b></p>
@@ -146,6 +147,15 @@
 				<h1><span class="icon-phone"></span></h1><br>
 				<p><b>VISIT US DAILY:</b></p><br>
 				<p>27 Division St, New York, <br> NY 10002, USA</p>
+			</div>
+			<div class="contacto">
+				<h1><span class=" icon-stopwatch"></span></h1><br>
+				<div id="clockdate">
+					<div class="clockdate-wrapper">
+						<div id="clock"></div>
+						<div id="date"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

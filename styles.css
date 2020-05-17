@@ -281,3 +281,20 @@ a{
 	margin-top: 30px;
 	padding: 50px;
 }
+.clockdate-wrapper {
+    padding-bottom: 120px;
+}
+#clock{
+    font-family: sans-serif;
+    font-size:30px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color:white;
+    text-shadow:0px 0px 1px #333;
+    font-size:10px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
