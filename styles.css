@@ -62,8 +62,8 @@ a{
 	margin-top: 20px;
 }
 .boton_menu:hover{
-	background-color: #caefb2;
-	color: black;
+	animation-name: flash;
+	animation-duration: 1s;
 }
 .barra_inferior{
 	background-color: #0b3d19;
@@ -80,11 +80,18 @@ a{
 	flex: 20%;
 	justify-content: center;
 	font-family: 'Barlow', sans-serif;
-	
+}
+.barrita_in p{
+	animation-duration: 3s;
+	animation-name: arrastrada;
+	animation-iteration-count: infinite;
 }
 .titulo_prin{
 	font-family: 'Barlow', sans-serif;
 	font-size: 5em;
+	animation-name: pulse;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 
 }
 #des{
@@ -103,6 +110,11 @@ a{
 	display: flex;
 	flex-wrap: wrap; 
 	align-items: center;
+}
+.image:hover, .image2:hover, .image3:hover{
+	animation-name: flash;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 .image, .image2, .image3{
 	text-align: center;
@@ -142,6 +154,7 @@ a{
 	display: flex;
 	align-items: center;
 	flex: 20%;
+	
 }
 .pag3 .text_pag3, .image_pag3{
 	margin-top: 80px;
@@ -159,6 +172,9 @@ a{
 .pag3 .title_pag3{
 	font-family: 'Barlow', sans-serif;
 	font-size: 3em;
+	animation-name: pulse;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 .pag3 .descrip_pag3{
 	font-family: 'Barlow', sans-serif;
@@ -170,6 +186,10 @@ a{
 	border:none;
 	padding: 10px 25px;
 	margin-top: 20px;
+}
+.pag3 .boton_pag3:hover{
+	animation-name: flash;
+	animation-duration: 2s;
 }
 .pag3 .img_pag3{
 	clip-path: circle(50% at 50% 50%);
@@ -193,16 +213,20 @@ a{
 	margin: 40px;
 	align-items: center;
 }
-.pag4 .texto_pag4{
+.pag4 #texto_pag4{
 	font-size: 1.5em;
+	
 }
-.pag4 .texto_pag4 .text_init_pag4{
+.pag4 .texto_pag4 #text_init_pag4{
 	font-family: 'Satisfy', cursive;
 	color: #faab34;
 	font-size: 2em;
 }
 .pag4 .lista_pag4 .li1_pag4, .li2_pag4, .li3_pag4, .li4_pag4{
 	flex: 20%;
+}
+.pag4 .lista_pag4 .li1_pag4:hover, .li2_pag4:hover, .li3_pag4:hover, .li4_pag4:hover{
+	font-size: large;
 }
 .pag4 .lista_pag4 .li2_pag4, .li4_pag4{
 	padding-top: 100px;
@@ -223,6 +247,10 @@ a{
 }
 .pag5 .galeri_pag5 .img{
 	margin: 15px;
+}
+.pag5 .galeri_pag5 .img:hover{
+	animation-name: flash;
+	animation-duration: 3s;
 }
 .pag6{
 	background-image: url(img/Fondo_pag6.jpg);
@@ -358,6 +386,11 @@ a{
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+.mio{
+	animation-duration: 3s;
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+}
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
@@ -376,3 +409,86 @@ a{
 .hidden{
 	overflow: hidden; 
 }
+/*Efectos*/
+@keyframes pulse {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes entrada {
+	from {
+	  opacity: 0;
+	  transform: scale3d(0.3, 0.3, 0.3);
+	}
+  
+	50% {
+	  opacity: 1;
+	}
+  }
+  @keyframes arrastrada {
+	from {
+	  transform: translate3d(100%, 0, 0) skewX(-30deg);
+	  opacity: 0;
+	}
+  
+	60% {
+	  transform: skewX(20deg);
+	  opacity: 1;
+	}
+  
+	80% {
+	  transform: skewX(-5deg);
+	}
+  
+	to {
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
